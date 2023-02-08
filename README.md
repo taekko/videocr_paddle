@@ -10,8 +10,8 @@ video with hardcoded subtitles:
 </p>
 Output: text file in .srt format
 <p float="left">
-	<img width="794" alt="output2" src="https://user-images.githubusercontent.com/45097812/217612666-0f59e8d0-8afe-4441-a9dc-d7439a52a514.png">
-	<img width="794" alt="output4" src="https://user-images.githubusercontent.com/45097812/217612698-98bd12d9-287e-4d0e-ab86-0d04e1ced163.png">
+	<img width="500" alt="output2" src="https://user-images.githubusercontent.com/45097812/217612666-0f59e8d0-8afe-4441-a9dc-d7439a52a514.png">
+	<img width="500" alt="output4" src="https://user-images.githubusercontent.com/45097812/217612698-98bd12d9-287e-4d0e-ab86-0d04e1ced163.png">
 </p>
 
 Notes:
