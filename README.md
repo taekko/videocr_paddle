@@ -92,6 +92,10 @@ pip install git+https://github.com/taekko/videocr_paddle.git
 
 }
 ```
+The sample `DIR_PATH` looks like this:
+<p float="left">
+	<img width="500" alt="Screenshot 2023-02-08 at 19 45 46" src="https://user-images.githubusercontent.com/45097812/217623398-477b2fd4-38d6-43e1-a980-71885b733033.png">
+</p>
 
 
 ## (Appendix_1) Parameters
