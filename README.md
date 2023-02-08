@@ -1,21 +1,24 @@
-## Description
+# Hardcoded subtitle extractor
 A package, based on `PaddleOCR`, used to detect and recognise hardcoded(burned-in) subtitles from videos and save them to .srt files.
 (Previous tested package, video OCR using `Tesseract`, showed worse result in speed and accuracy.)
+- With multiprocessing tools, it took 18 minutes running on 52 short videos with a total duration of 1 hour.
+- Worth a try if you have a video with hardcoded subtitles and it's not available to use so far.
+
+## Description
 
 Input:
-video with hardcoded subtitles:
+videos with hardcoded subtitles
 <p float="left">
 	<img width="500" alt="output1" src="https://user-images.githubusercontent.com/45097812/217612460-d85d3bc0-b216-4159-b3b0-2e6553f0a921.png">
 	<img width="500" alt="output3" src="https://user-images.githubusercontent.com/45097812/217612685-cfb95381-27dc-46e5-aaff-925402830012.png">
 </p>
-Output: text file in .srt format
+Output: text file in .srt format per video.
 <p float="left">
 	<img width="500" alt="output2" src="https://user-images.githubusercontent.com/45097812/217612666-0f59e8d0-8afe-4441-a9dc-d7439a52a514.png">
 	<img width="500" alt="output4" src="https://user-images.githubusercontent.com/45097812/217612698-98bd12d9-287e-4d0e-ab86-0d04e1ced163.png">
 </p>
 
 Notes:
-- With multiprocessing it took 18 minutes, running on 52 short videos with a total duration of 1 hour, 
 - Due to the issue locking in parallelised processing, progress bar looks quite ugly, but works ok.
 <p float="left">
 	<img width="500" alt="Screenshot 2023-02-08 at 19 25 50" src="https://user-images.githubusercontent.com/45097812/217619875-85735176-c719-4c72-b9b1-1ab00263e72b.png">
@@ -53,7 +56,7 @@ pip install parmap
    
 4. Setup videocr
 ```
-!pip install git+https://github.com/oliverfei/videocr-PaddleOCR.git
+pip install git+https://github.com/taekko/videocr_paddle.git
 ```
 
 ## Run on CLI
