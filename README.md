@@ -15,8 +15,12 @@ Output: text file in .srt format
 </p>
 
 Notes:
-With multiprocessing it took 18 minutes, running on 52 short videos with a total duration of 1 hour, 
-
+- With multiprocessing it took 18 minutes, running on 52 short videos with a total duration of 1 hour, 
+- Due to the issue locking in parallelised processing, progress bar looks quite ugly, but works ok.
+<p float="left">
+	<img width="500" alt="Screenshot 2023-02-08 at 19 25 50" src="https://user-images.githubusercontent.com/45097812/217619875-85735176-c719-4c72-b9b1-1ab00263e72b.png">
+	
+</p>
 
 ## Getting Started
 Guide:
