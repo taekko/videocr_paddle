@@ -32,10 +32,9 @@ Guide:
 - videocr
 - tqdm
 - parmap
-- ipywidgets (in case you run on jupyter notebook/lab)
 
 ## Installation
-0. Prepare your environment (local, conda ..)
+0. Prepare CLI on your environment (local, conda ..)
    
 1. Setup PaddlePaddle (in case CPU)
 ```
