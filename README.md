@@ -1,17 +1,28 @@
 ## Description
----
+A package, based on `PaddleOCR`, used to detect and recognise hardcoded(burned-in) subtitles from videos and save them to .srt files.
+(Previous tested package, video OCR using `Tesseract`, showed worse result in speed and accuracy.)
 
+Input:
+video with hardcoded subtitles:
+<p float="left">
+	<img width="500" alt="output1" src="https://user-images.githubusercontent.com/45097812/217612460-d85d3bc0-b216-4159-b3b0-2e6553f0a921.png">
+	<img width="500" alt="output3" src="https://user-images.githubusercontent.com/45097812/217612685-cfb95381-27dc-46e5-aaff-925402830012.png">
+</p>
+Output: text file in .srt format
+<p float="left">
+	<img width="794" alt="output2" src="https://user-images.githubusercontent.com/45097812/217612666-0f59e8d0-8afe-4441-a9dc-d7439a52a514.png">
+	<img width="794" alt="output4" src="https://user-images.githubusercontent.com/45097812/217612698-98bd12d9-287e-4d0e-ab86-0d04e1ced163.png">
+</p>
 
-Output:
-
-Detecting and recognising text in video using Tesseract had disadvantage in speed and accuracy.
+Notes:
+With multiprocessing it took 18 minutes, running on 52 short videos with a total duration of 1 hour, 
 
 
 ## Getting Started
----
+Guide:
+- First try to change only `DIR_PATH`, `VIDEO_TYPE`, `lang`, with other parameters fixed.
 
 ## Dependencies
----
 - Python 3.7 or 3.8 (Other vestions not tested)
 - paddlepaddle
 - videocr
@@ -20,17 +31,22 @@ Detecting and recognising text in video using Tesseract had disadvantage in spee
 - ipywidgets (in case you run on jupyter notebook/lab)
 
 ## Installation
----
 0. Prepare your environment (local, conda ..)
    
 1. Setup PaddlePaddle (in case CPU)
-`pip install paddlepaddle==2.3.1 -i https://mirror.baidu.com/pypi/simple`
+```
+pip install paddlepaddle==2.3.1 -i https://mirror.baidu.com/pypi/simple
+```
 
 2. (Optional) Setup PaddlePaddle-GPU (only in case GPU, recommended if you have a CUDA 9 or CUDA 10 GPU.)
-`pip install paddlepaddle-gpu==2.3.1.post112 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html`
+```
+pip install paddlepaddle-gpu==2.3.1.post112 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html
+```
 
 3. Install parmap
-   `pip install parmap`
+```
+pip install parmap
+```
    
 4. Setup videocr
 ```
@@ -38,7 +54,7 @@ Detecting and recognising text in video using Tesseract had disadvantage in spee
 ```
 
 ## Run on CLI
-1.  Go to where `config.json` and `run.py` is located
+1.  Go to where `config.json` and `run.py` are located.
 2. Fix .json configuration file (see appendix below)
 3. Run `python3 run.py`
 
@@ -72,13 +88,7 @@ Detecting and recognising text in video using Tesseract had disadvantage in spee
 ```
 
 
-### Results
-- Time
-  It took 18 minutes, running on 52 short videos with a total duration of 1 hour, 
-
-
-
-### (Appendix_1) Parameters
+## (Appendix_1) Parameters
 - `DIR_PATH`
   Path where the target vidoes are located.
   
@@ -133,7 +143,7 @@ Detecting and recognising text in video using Tesseract had disadvantage in spee
   The number of frames to skip before sampling a frame for OCR. Keep in mind the fps of the input video before increasing.
 
 
-### (Appendix_2) 5 Support languages and abbreviations
+## (Appendix_2) 5 Support languages and abbreviations
 
 | Language  | Abbreviation | | Language  | Abbreviation |
 | ---  | --- | --- | ---  | --- |
